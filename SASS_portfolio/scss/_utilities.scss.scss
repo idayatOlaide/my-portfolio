@@ -1,0 +1,69 @@
+.text-primary {
+  color: #ffa500;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333333;
+  color: #f4f4f4;
+}
+
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.m-heading {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.sub {
+  text-align: center;
+  margin-top: 1px;
+}
+
+//button
+%btn-shared {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn {
+  @extend %btn-shared;
+  color: #333;
+  background-color: $light-color;
+}
+
+button[class^="btn"]:hover,
+a[class^="btn"]:hover {
+  background-color: $btndark-color;
+}
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+
+.hearder-wrap {
+  max-width: $website-width;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
